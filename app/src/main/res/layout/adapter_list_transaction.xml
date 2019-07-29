@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_dark" android:paddingLeft="0.5dp"
+            android:paddingRight="0.5dp" android:paddingTop="0.5dp" android:paddingBottom="0.5dp">
+        <TextView
+                android:text="100"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/tvNumber1" android:textSize="14sp"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/background_light" android:layout_weight="9"
+                android:textAlignment="center" android:gravity="center"
+                android:layout_marginRight="0.5dp" android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:layout_gravity="center_horizontal">
+            <TextView
+                    android:text="NAMA ITEM APALAH INI COBA DI PERPANJANG AJA"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/tvName1" android:layout_weight="1"
+                    android:textSize="14sp" android:textColor="@android:color/background_dark"
+                    android:background="@android:color/background_light"
+                    android:paddingLeft="5dp"/>
+            <TextView
+                    android:text="30/03/2019"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/tvDate1" android:layout_weight="1"
+                    android:textSize="12sp" android:textColor="@android:color/darker_gray"
+                    android:background="@android:color/background_light"
+                    android:paddingLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

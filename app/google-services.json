@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "78850136379",
+    "firebase_url": "https://posmuku.firebaseio.com",
+    "project_id": "posmuku",
+    "storage_bucket": "posmuku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78850136379:android:d5038c6c9706360b",
+        "android_client_info": {
+          "package_name": "com.mukusuzuki.posmuku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78850136379-vvf1ad9r4m2vlbhc4u7oh4l4fa072k1n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mukusuzuki.posmuku",
+            "certificate_hash": "8ed874a8c879a4487c33239f1a08a57496a5a81b"
+          }
+        },
+        {
+          "client_id": "78850136379-stt3ggijt06lnd604c87078c43qqtq4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzT05iypQStXq30PboSsla1cC3YND_blk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78850136379-stt3ggijt06lnd604c87078c43qqtq4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary2">#0EA392</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorPrimarySplash">#ff0099cc</color>
+    <color name="colorPrimaryDarkSplash">#006183</color>
+    <color name="colorAccentSplash">#8A0102</color>
+
+    <color name="colorTextSplash">#8A0102</color>
+    <color name="colorBgSplashScreen">#FDFDFE</color>
+</resources>
