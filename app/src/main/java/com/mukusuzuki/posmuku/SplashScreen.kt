@@ -14,6 +14,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
+import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.mukusuzuki.posmuku.data._Product
@@ -98,6 +99,9 @@ class SplashScreen : AppCompatActivity() {
         mDelayHandler = Handler()
         mDelayHandler!!.postDelayed(mRunnable, myDELAY)
 
+        btnGoogleLogin.setOnClickListener {
+            signInGoogle()
+        }
     }
 
     public override fun onDestroy() {
@@ -194,15 +198,16 @@ class SplashScreen : AppCompatActivity() {
         //gotoMain()
     }
 
-     fun signInGoogle(view: View){
-        val signIntent = mGoogleSignInClient.signInIntent
+     fun signInGoogle(){
+        val signIntent: Intent = mGoogleSignInClient.signInIntent
         startActivityForResult(signIntent, GOOGLE_SIGN)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+        println("DATA $data")
         if(requestCode == GOOGLE_SIGN) {
-            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+            val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
 
             try {
                 val account = task.getResult(ApiException::class.java)

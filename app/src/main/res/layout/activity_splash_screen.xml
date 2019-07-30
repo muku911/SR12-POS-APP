@@ -42,7 +42,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvCreator"
             android:layout_marginBottom="18dp" app:layout_constraintBottom_toTopOf="@+id/tv_Status"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" tools:visibility="visible"/>
     <TextView
             android:text="Please Wait..."
             android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
             android:textColor="@color/colorTextSplash"
             app:layout_constraintTop_toBottomOf="@+id/progressBarS" android:layout_marginBottom="87dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" tools:ignore="HardcodedText"/>
+            app:layout_constraintBottom_toBottomOf="parent" tools:ignore="HardcodedText" tools:visibility="visible"/>
     <Button
             android:text="LOGIN WITH GOOGLE"
             android:layout_width="0dp"
@@ -59,8 +59,8 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.899"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.988"
             tools:ignore="HardcodedText" android:background="@drawable/round_bg"
-            android:drawableStart="@drawable/ic_google_logo" tools:visibility="gone" android:onClick="signInGoogle"/>
+            android:drawableStart="@drawable/ic_google_logo" tools:visibility="gone"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
