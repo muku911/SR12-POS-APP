@@ -83,7 +83,7 @@ class SplashScreen : AppCompatActivity() {
                     countData = getResult.size
                 }
             }
-            gotoLogin()
+            gotoMain()
         }
     }
 
